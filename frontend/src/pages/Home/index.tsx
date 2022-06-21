@@ -1,16 +1,22 @@
+import { ReactComponent as MainImage } from "assets/images/logo.svg";
+
+import './styles.css';
 import Login from './Login';
 
 function Home() {
   return (
-    <div>
-      <div>
-        <h1>Avalie o Filme</h1>
-        <p>Diga o que voce achou do seu filme favorito</p>
+      <div className="auth-container">
+        <div className="auth-banner-container">
+            <h1>Avalie o Filme</h1>
+            <p>Diga o que voce achou do seu filme favorito.</p>
+            <MainImage />
+        </div>
+        <div className="auth-form-container">
+          <div>
+            <Login />
+          </div>
+        </div>
       </div>
-      <div>
-        <Login />
-      </div>
-    </div>
   );
 }
 
